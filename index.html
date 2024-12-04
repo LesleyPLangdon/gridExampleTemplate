@@ -6,31 +6,46 @@
     <title>Grid Example</title>
     <link href="style.css" rel='stylesheet'/>
   </head>
-  <body>
+  <body><main>
     <div class="grid-layout">
-    <header class="header">
-      <h1>Food order system</h1>
-    </header>
-    <main>
-      <section class="sidebar leftSidebar">
-        <p>Promotions</p>
-        <p>Contact Us</p>
-
-      </section>
-      <section class="main">
-        <p>Special Offers</p>
-        <p>FAQs</p>
-
-      </section>
-      <section class="sidebar rightSidebar">
-
+      <section class="header">
+        <h1>Food order system</h1>
       </section>
       
-    </main>
-    <footer class="footer">
-      <p>&copy; 2024 OSVTS comp sci</p>
-    </footer>
+        <section class="leftSidebar">
+          <p>Promotions</p>
+          <p>Contact Us</p>
+
+        </section>
+        <section class="main">
+          <div id="orderDisplay" class="order-display">
+            <p id="orderSpace"> Place your order </p>
+          </div>
+          <div class="grid-container">
+            <button class="grid-item" onclick="addToOrder('Burger')">Burger</button>
+            <button class="grid-item" onclick="addToOrder('Pizza')">Pizza</button>
+            <button class="grid-item" onclick="addToOrder('Salad')">Salad</button>
+            <button class="grid-item" onclick="addToOrder('Fries')">Fries</button>
+            <button class="grid-item" onclick="addToOrder('Soda')">Soda</button>
+            <button class="grid-item" onclick="addToOrder('Ice Cream')">Ice Cream</button>
+
+          </div>
+          <button class="submit-button" onclick="submitOrder()">Submit Button</button>
+
+
+        </section>
+        <section class="rightSidebar">
+          
+          <p>Special Offers</p>
+          <p>FAQs</p>
+        </section>
+        
+      
+      <section class="footer">
+        <p>&copy; 2024 OCVTS comp sci</p>
+      </section>
     </div>
+  </main>
      <script src="script.js"></script>
   </body>
 </html>
