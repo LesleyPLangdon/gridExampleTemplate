@@ -16,13 +16,28 @@
         <p>Contact Us</p>
       </section>
       <section id="main">
-        <p>Place holder for grid inside the grid</p>
+        <div id="orderScreen">
+        <div id="orderDisplay">
+          <p>Place your order</p>
+        </div>
+        <div id="grid-container">
+          <button class="grid-item" onclick="addToOrder('Burger')">Burger</button>
+          <button class="grid-item" onclick="addToOrder('Pizza')">Pizza</button>
+          <button class="grid-item" onclick="addToOrder('Fries')">Fries</button>
+          <button class="grid-item" onclick="addToOrder('Salad')">Salad</button>
+          <button class="grid-item" onclick="addToOrder('Soda')">Soda</button>
+          <button class="grid-item" onclick="addToOrder('Ice Cream')">Ice Cream</button>
+        </div>
+        <button id="submitButton" onclick="submitOrder()">Submit Order</button> 
+      </div>
       </section>
       <section id="rightSide">
         <p>Special Offers</p>
         <p>FAQs</p>
       </section>
-      <section id="footer"></section>
+      <section id="footer">
+        <p>&copy; OCVTS comp sci 2024</p>
+      </section>
     </main>
      <script src="script.js"></script>
   </body>
